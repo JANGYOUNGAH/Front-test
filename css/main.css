@@ -1,0 +1,70 @@
+/* COMMON */
+body {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Bebas Neue', 'Noto Sans KR', sans-serif;
+}
+
+.inner {
+  width: 1000px;
+  margin: 0 auto; /*가운데정렬*/
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  /* 기존 블럭요소는 가로넓이 최대로 사용하려고 하지만,
+  포지션 픽스트, 앱솔루트에서 가로너비는 최소한으로 사용할려고 시도한다. */
+  width: 100%;
+  background-color: rgb(244, 231, 210);
+  position: fixed;
+  top: 0;
+  /* z-index: 9; */
+}
+
+header > .inner {
+  height: 90px;
+}
+
+
+.logo {
+  position: absolute;
+  padding: 17px;
+  font-weight: 900;
+  font-size: 50px;
+  color:#333;
+}
+
+.nav { 
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  display: flex;
+  box-sizing: border-box;
+  font-size: 22px;
+  width: 720px;
+  justify-content: space-evenly;  
+}
+
+.nav a {
+  color: #333;
+}
+
+/* information */
+.information {
+  width: 100%;
+  background-color: rgb(244, 231, 210);
+  position: fixed;
+  top: 90px;
+  border-top: 20px solid rgb(57, 58, 56);
+}
+
+.information >.inner {
+  height: 600px;
+}
